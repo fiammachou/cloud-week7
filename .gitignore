@@ -1,0 +1,25 @@
+# OpenTofu local files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Sensitive configuration
+terraform.tfvars
+*.auto.tfvars
+*.tfvars.json
+*.tfbackend
+*.pem
+*.key
+.env
+.env.*
+
+# CSC authentication
+clouds.yaml
+secure.yaml
+*-openrc.sh
+
+# Keep the provider lock file tracked
+!.terraform.lock.hcl
